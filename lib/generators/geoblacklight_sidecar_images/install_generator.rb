@@ -45,7 +45,7 @@ GBLSI_THUMBNAIL_FIELD: 'thumbnail_path_ss'"
     end
 
     def bundle_install
-      Bundler.with_unbundled_env do
+      Bundler.with_original_env do
         run "bundle install"
       end
     end
